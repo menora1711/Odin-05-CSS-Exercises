@@ -8,16 +8,18 @@ body {
   font-weight: 800;
 }
 
+/*No conflict, so last selectors chosen*/
+.para {
+  font-size: 22px;
+}
+
 .small-para {
   font-size: 14px;
   font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
-}
-
-.confirm {
+/*Changed from class to ID, ID name same as in index.html*/
+#confirm-button {
   background: green;
   color: white;
   font-weight: bold;
@@ -29,13 +31,15 @@ body {
   font-size: 20px;
 }
 
-.child {
+/* Two selectors below were changed,
+making .text .child more specific */
+.text .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
 }
 
-div.text {
+div {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
